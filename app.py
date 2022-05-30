@@ -13,10 +13,18 @@ print("-----------------------------")
 
 # TODO
 # Create a new GameBoard called board
+gameboards = [
+    gameboard.GameBoard()
+]
+board = gameboards[0]
 # Create a new Player called played starting at position 3,2
+players = [
+    player.Player( 3, 2)
+]
+played = players[0]
 
 while True:
-    board.printBoard(player.rowPosition, player.columnPosition)
+    board.printBoard(played.rowPosition, played.columnPosition)
     selection = input("Make a move: ")
     # TODO
     # Move the player through the board
